@@ -1,3 +1,89 @@
-h1 {
-  color:pink;
+/*fonts*/
+h1{
+  font-family: "Raleway",sans-serif;
+font-weight: bold;
+font-size: 96px;
+text-align: center;
+color: #3B3636;
+}
+h2{
+  font-family: "Raleway",sans-serif;
+font-weight: 500;
+font-size: 48px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+
+color: #000000;
+}
+h3{
+  font-family: Roboto;
+font-weight: lighter;
+font-size: 30px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+p{
+  font-family: 'Roboto',sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: justify;
+  color: #000000;
+}
+#subheader{
+  font-family: 'Roboto',sans-serif;
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #000000;
+}
+
+a{
+  font-family: 'Roboto',sans-serif;
+font-weight: bold;
+font-size: 24px;
+text-align: center;
+color: #000000;
+}
+.price{
+  font-family: 'Roboto',sans-serif;
+font-weight: lighter;
+font-size: 24px;
+text-align: center;
+color: #000000;
+
+}
+
+/*layout*/
+.divider{
+  border-color: black;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  grid-gap:20px;
+}
+
+#aboutText{
+  grid-column: span 2;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+}
+.aboutPic{
+  width:
+}
+
+#legacyVid{
+  grid-column: span 3;
+}
+#legacyText{
+  grid-column: span 2;
+}
+#shopTitle{
+  grid-column: span 5;
+  text-align: center;
+}
+#seeMore{
+  grid-column: span 5;
 }
