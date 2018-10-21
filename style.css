@@ -1,89 +1,253 @@
-/*fonts*/
-h1{
-  font-family: "Raleway",sans-serif;
-font-weight: bold;
-font-size: 96px;
-text-align: center;
-color: #3B3636;
+body{
+background: url(pictures/header2.jpg);
+background-repeat: no-repeat;
+background-size: 100%; /*FIX ME*/
+opacity: 1;
+  }/*fonts*/
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+  text-align: center;
+  color: #3B3636;
 }
-h2{
-  font-family: "Raleway",sans-serif;
-font-weight: 500;
-font-size: 48px;
-letter-spacing: 0.3em;
-text-transform: uppercase;
 
-color: #000000;
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #3B3636;
 }
-h3{
-  font-family: Roboto;
-font-weight: lighter;
-font-size: 30px;
-text-align: center;
-text-transform: uppercase;
-color: #000000;
-}
-p{
-  font-family: 'Roboto',sans-serif;
+
+h3 {
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  font-size: 30px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3B3636;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
   text-align: justify;
-  color: #000000;
-}
-#subheader{
-  font-family: 'Roboto',sans-serif;
-font-weight: normal;
-font-size: 18px;
-text-align: center;
-color: #000000;
+  color: #3B3636;
 }
 
-a{
-  font-family: 'Roboto',sans-serif;
-font-weight: bold;
-font-size: 24px;
-text-align: center;
-color: #000000;
-}
-.price{
-  font-family: 'Roboto',sans-serif;
-font-weight: lighter;
-font-size: 24px;
-text-align: center;
-color: #000000;
-
+#subheader {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #3B3636;
 }
 
-/*layout*/
-.divider{
-  border-color: black;
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  grid-gap:20px;
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #3B3636;
 }
 
-#aboutText{
-  grid-column: span 2;
+.price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  text-align: center;
+  color: #3B3636;
 }
 
-img{
+/*layout & general*/
+.divider {
+  border-color: #3B3636;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding-top: 50px;
+}
+
+img {
   object-fit: cover;
   width: 100%;
 }
-.aboutPic{
-  width:
+
+button {
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: #3B3636;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  margin: 20px;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding: 8px;
+  cursor: pointer;
 }
 
-#legacyVid{
-  grid-column: span 3;
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
-#legacyText{
+
+/*HEADER*/
+header{
+  height: 45vh;
+}
+h1{
+  margin-top:65vh;
+  margin-bottom:0px;
+}
+#subheader{
+  margin-top:0px;
+}
+nav{
+  position:fixed;
+top: 0;
+left:0;
+width: 100%;
+background-color: #FFF;
+padding: 5px;
+z-index: 5;
+}
+ul{list-style-type: none;
+margin: 0;
+padding: 0;
+display:flex;
+justify-content: space-around;}
+li{
+  display: inline;
+}
+nav a{
+  text-decoration: none;
+}
+/*ABOUT*/
+#aboutText {
   grid-column: span 2;
 }
-#shopTitle{
+/*NEW COLLECTION*/
+#videoWrap {
+  grid-column: span 3;
+}
+#videoWrap {
+  margin-top:50px;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+#videoWrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#legacyText {
+  grid-column: span 2;
+}
+
+#shopTitle {
   grid-column: span 5;
   text-align: center;
 }
-#seeMore{
-  grid-column: span 5;
+
+.shopPic {
+  border-color: #3B3636;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.shopPic:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  height: 3em;
+  margin-bottom:0px;
+}
+
+#seeMore {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin: auto;
+}
+
+/*CONTACT US*/
+#contactUs h2 {
+  text-align: center;
+}
+#contactUs img {
+  margin:auto;
+}
+
+#contactUsText {
+  grid-column: span 3;
+  margin-left: 5px;
+  width: 90%;
+}
+
+#contactUsPic {
+  grid-column: span 2;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  margin: 20px;
+  margin-left: 0px;
+  width: 100%;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-color: #3B3636;
+  border-style: solid;
+  border-width: 1px;
+}
+
+input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  margin: 20px;
+  margin-left: 0px;
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-color: #3B3636;
+}
+
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin-right: 5px;
+}
+
+footer a {
+  color: ##505649;
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
 }
